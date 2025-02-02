@@ -5,25 +5,25 @@
 class Clone < Formula
   desc ""
   homepage ""
-  version "0.5.4"
+  version "0.5.5"
 
   depends_on "gh"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joakimen/clone/releases/download/v0.5.4/clone_0.5.4_darwin_amd64"
-      sha256 "de2ea50eee02942a730e7a0bd9211adf48e2c406ae6a1de61fae75f46efbe23f"
+      url "https://github.com/joakimen/clone/releases/download/v0.5.5/clone_0.5.5_darwin_amd64"
+      sha256 "75802e4f33a9b577632ec16b53a2ee6273cd33d853786d8b48fef9b27a7f464c"
 
       def install
-        bin.install "clone_0.5.4_darwin_amd64" => "clone"
+        bin.install "clone_0.5.5_darwin_amd64" => "clone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joakimen/clone/releases/download/v0.5.4/clone_0.5.4_darwin_arm64"
-      sha256 "3eaf4450541a2596298315d1fcdf3b88ed9fa9aed97a0897191273fcf5a45dc0"
+      url "https://github.com/joakimen/clone/releases/download/v0.5.5/clone_0.5.5_darwin_arm64"
+      sha256 "214f3f3f536378eaa3aa5f53023da28819b845014fd412eebdcedf9083643cb0"
 
       def install
-        bin.install "clone_0.5.4_darwin_arm64" => "clone"
+        bin.install "clone_0.5.5_darwin_arm64" => "clone"
       end
     end
   end
@@ -31,21 +31,21 @@ class Clone < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joakimen/clone/releases/download/v0.5.4/clone_0.5.4_linux_amd64"
-        sha256 "a0991c27d416adff6f56b87441cda1f2a13b9ec8c673ee4b4763fad286249c7a"
+        url "https://github.com/joakimen/clone/releases/download/v0.5.5/clone_0.5.5_linux_amd64"
+        sha256 "e9c4f6e1d84911652d0b99ce70c7535262502831dcddff8c4bd4f290d2740abb"
 
         def install
-          bin.install "clone_0.5.4_linux_amd64" => "clone"
+          bin.install "clone_0.5.5_linux_amd64" => "clone"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joakimen/clone/releases/download/v0.5.4/clone_0.5.4_linux_arm64"
-        sha256 "93385b71b67ca0bf43d53744018b00d0b8c2e473b0393ae91bd24432ce114852"
+        url "https://github.com/joakimen/clone/releases/download/v0.5.5/clone_0.5.5_linux_arm64"
+        sha256 "246b6540dd6b0b97763a6a78db9edae9c2ff65c0f1e136f6aff8161a02aa4c6f"
 
         def install
-          bin.install "clone_0.5.4_linux_arm64" => "clone"
+          bin.install "clone_0.5.5_linux_arm64" => "clone"
         end
       end
     end

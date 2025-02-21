@@ -5,23 +5,23 @@
 class Gg < Formula
   desc ""
   homepage ""
-  version "0.8.0"
+  version "0.8.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joakimen/gg/releases/download/v0.8.0/gg_0.8.0_darwin_amd64"
-      sha256 "ff70aa4236eefecea7009e0144a377627542fed8ead4ded67808e0940f61cff5"
+      url "https://github.com/joakimen/gg/releases/download/v0.8.1/gg_0.8.1_darwin_amd64"
+      sha256 "3dc93d70559c351f74eca16244e86afccc82f792889907bdb314e673e24fbed6"
 
       def install
-        bin.install "gg_0.8.0_darwin_amd64" => "gg"
+        bin.install "gg_0.8.1_darwin_amd64" => "gg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joakimen/gg/releases/download/v0.8.0/gg_0.8.0_darwin_arm64"
-      sha256 "31f3e0b417e79aab2e008cb46c57366580078ab4fe978d477335922b18b0c2e2"
+      url "https://github.com/joakimen/gg/releases/download/v0.8.1/gg_0.8.1_darwin_arm64"
+      sha256 "7067cac6bccb0589946c7d53c267ab37e82c8762f0a7f85fe0c90d7786b3aba2"
 
       def install
-        bin.install "gg_0.8.0_darwin_arm64" => "gg"
+        bin.install "gg_0.8.1_darwin_arm64" => "gg"
       end
     end
   end
@@ -29,21 +29,21 @@ class Gg < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joakimen/gg/releases/download/v0.8.0/gg_0.8.0_linux_amd64"
-        sha256 "0d22d43744ecd8db7c8aeb45b08506ebd49e25cda71d5dc05bda81bd863355c5"
+        url "https://github.com/joakimen/gg/releases/download/v0.8.1/gg_0.8.1_linux_amd64"
+        sha256 "232aaa5714e0e62a1faa62838184d9f8793223e1cff962ef57fb3080cc59da80"
 
         def install
-          bin.install "gg_0.8.0_linux_amd64" => "gg"
+          bin.install "gg_0.8.1_linux_amd64" => "gg"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joakimen/gg/releases/download/v0.8.0/gg_0.8.0_linux_arm64"
-        sha256 "d4aa328b15234e8a7b476a0736dc495311a0777f3aa203a01520657b179ad56b"
+        url "https://github.com/joakimen/gg/releases/download/v0.8.1/gg_0.8.1_linux_arm64"
+        sha256 "19c8e064c782c16e568020fa4082e0f0e18466598ea0f205fa865416b510d572"
 
         def install
-          bin.install "gg_0.8.0_linux_arm64" => "gg"
+          bin.install "gg_0.8.1_linux_arm64" => "gg"
         end
       end
     end
